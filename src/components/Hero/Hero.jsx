@@ -1,4 +1,5 @@
 import "./Hero.css";
+import heroImage from "../../assets/images/hero/imagen_principal.jpeg";
 
 function Hero() {
   return (
@@ -16,28 +17,31 @@ function Hero() {
           </h1>
 
           <p>
-            En Apolo Skating desarrollamos talento,
-            disciplina y pasión por el patinaje
-            en niños, jóvenes y adultos.
+            En Apolo Skating creemos que el deporte transforma vidas.
+            Formamos niños, jóvenes y adultos mediante el patinaje,
+            fortaleciendo la disciplina, el trabajo en equipo y la confianza.
           </p>
 
           <div className="hero-buttons">
+
             <button className="btn-primary">
               Inscríbete
             </button>
 
-            <button className="btn-secondary">
+            <button className="btn-primary">
               Conócenos
             </button>
+
           </div>
 
         </div>
 
         <div className="hero-image">
 
-          <div className="image-placeholder">
-            Imagen Principal
-          </div>
+          <img
+            src={heroImage}
+            alt="Entrenamiento Apolo Skating"
+          />
 
         </div>
 

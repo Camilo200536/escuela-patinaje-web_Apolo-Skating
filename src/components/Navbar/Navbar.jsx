@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logoApolo from "../../assets/images/logo-apolo.png";
+import logoApolo from "../../assets/images//Logo/logo-apolo.png";
 
 function Navbar() {
   return (
@@ -7,8 +7,7 @@ function Navbar() {
       <div className="container">
 
         <div className="logo">
-          <h2>Apolo Skating</h2>
-           <img src={logoApolo} alt="Logo Apolo Skating" />
+  <img src={logoApolo} alt="Logo Apolo Skating" />
         </div>
 
         <nav>
