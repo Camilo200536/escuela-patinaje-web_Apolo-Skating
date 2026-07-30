@@ -1,0 +1,29 @@
+:root {
+  /* ===== Colores ===== */
+  --color-primary: #229342;
+  --color-primary-dark: #1B7635;
+  --color-primary-light: #EAF7EE;
+
+  --color-white: #FFFFFF;
+  --color-black: #111827;
+
+  --color-text: #1F2937;
+  --color-text-light: #6B7280;
+
+  /* ===== Contenedor ===== */
+  --container-width: 1200px;
+
+  /* ===== Espaciados ===== */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 64px;
+
+  /* ===== Bordes ===== */
+  --border-radius: 10px;
+
+  /* ===== Transiciones ===== */
+  --transition: 0.3s ease;
+}
