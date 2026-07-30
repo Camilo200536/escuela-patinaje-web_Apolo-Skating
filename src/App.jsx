@@ -1,9 +1,9 @@
 import "./App.css";
 import "./styles/global.css";
-import Home from "./pages/Home/Home";
+import PaginaInicio from "./pages/PaginaInicio/PaginaInicio";
 
 function App() {
-    return <Home />;
+    return <PaginaInicio />;
 }
 
 export default App;
