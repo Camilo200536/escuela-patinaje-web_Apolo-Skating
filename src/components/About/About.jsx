@@ -7,9 +7,7 @@ function About() {
       <div className="container about-content">
 
         <div className="about-image">
-          <div className="about-image-placeholder">
             <img src={Aboutimages} alt="Nosotros" />
-          </div>
         </div>
 
         <div className="about-text">
