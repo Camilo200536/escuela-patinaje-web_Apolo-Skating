@@ -1,8 +1,8 @@
-import iniciacion from "../assets/images/Programs/iniciacion.jpeg";
+import iniciacion from "../assets/images/Programs/Iniciacion.jpeg";
 import nivel1 from "../assets/images/Programs/Nivel_1.jpeg";
 import nivel2 from "../assets/images/Programs/Nivel_2.jpeg";
 import nivel3 from "../assets/images/Programs/Nivel_3.jpeg";
-import competitivo from "../assets/images/Programs/profesional.jpeg";
+import competitivo from "../assets/images/Programs/Profesional.jpeg";
 import adultos from "../assets/images/Programs/Adultos.jpeg";
 
 
