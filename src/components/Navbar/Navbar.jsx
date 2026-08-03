@@ -15,8 +15,10 @@ function Navbar() {
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#programas">Programas</a></li>
+            <li><a href="#horarios">Horarios</a></li>
             <li><a href="#galeria">Galería</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            
           </ul>
         </nav>
 

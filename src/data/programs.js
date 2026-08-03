@@ -1,9 +1,9 @@
-import iniciacion from "../assets/images/Programs/placeholder.jpeg";
-import nivel1 from "../assets/images/Programs/placeholder.jpeg";
-import nivel2 from "../assets/images/Programs/placeholder.jpeg";
-import nivel3 from "../assets/images/Programs/placeholder.jpeg";
-import competitivo from "../assets/images/Programs/placeholder.jpeg";
-import adultos from "../assets/images/Programs/placeholder.jpeg";
+import iniciacion from "../assets/images/Programs/iniciacion.jpeg";
+import nivel1 from "../assets/images/Programs/Nivel_1.jpeg";
+import nivel2 from "../assets/images/Programs/Nivel_2.jpeg";
+import nivel3 from "../assets/images/Programs/Nivel_3.jpeg";
+import competitivo from "../assets/images/Programs/profesional.jpeg";
+import adultos from "../assets/images/Programs/Adultos.jpeg";
 
 
 const programs = [
@@ -30,8 +30,8 @@ const programs = [
     image: nivel2,
     title: "Nivel 2",
     description: "Perfeccionamiento de la técnica y coordinación.",
-    level: "Recreativo",
-    age: "6 años en adelante",
+    level: "Semiprofesional",
+    age: "Según evaluación",
     buttonText: "Más información",
   },
   {
@@ -39,7 +39,7 @@ const programs = [
     image: nivel3,
     title: "Nivel 3",
     description: "Preparación para avanzar al nivel competitivo.",
-    level: "Recreativo",
+    level: "Semiprofesional",
     age: "7 años en adelante",
     buttonText: "Más información",
   },
@@ -48,7 +48,7 @@ const programs = [
     image: competitivo,
     title: "Competitivo",
     description: "Entrenamiento de alto rendimiento para competencias oficiales.",
-    level: "Profesional",
+    level: "Patin profesional",
     age: "Según evaluación",
     buttonText: "Más información",
   },

@@ -1,0 +1,66 @@
+.schedule-day h4{
+
+    color:#229342;
+
+    margin-bottom:15px;
+
+    font-size:1.15rem;
+
+    border-left:5px solid #229342;
+
+    padding-left:12px;
+
+}
+
+
+.schedule-day{
+
+    margin-bottom:30px;
+
+}
+
+
+.class-number{
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+
+.time-box{
+
+    background:#f4f8f5;
+
+    border-left:5px solid #229342;
+
+    border-radius:10px;
+
+    padding:12px 18px;
+
+    width:100%;
+
+    color:#333;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.schedule-row{
+
+    margin-bottom:12px;
+
+}
+
+.time-box:hover{
+
+    background:#229342;
+
+    color:white;
+
+    transform:translateX(8px);
+
+}

@@ -1,0 +1,190 @@
+.contact{
+    padding:80px 10%;
+    background:linear-gradient(to bottom,#ffffff,#f5f9f6);
+    text-align:center;
+}
+
+.contact .section-tag{
+
+    display:inline-block;
+    background:#e7f6ec;
+    color:#229342;
+    padding:8px 18px;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.contact h2{
+
+    font-size:2.5rem;
+    color:#229342;
+    margin-bottom:20px;
+
+}
+
+.contact .subtitle{
+
+    max-width:700px;
+    margin:0 auto 45px;
+    color:#666;
+    line-height:1.8;
+
+}
+
+/* BOTÓN WHATSAPP */
+
+.whatsapp-button{
+
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+
+    padding:18px 35px;
+
+    background:#25D366;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-size:1.1rem;
+    font-weight:bold;
+
+    transition:.3s;
+
+    margin-bottom:60px;
+
+}
+
+.whatsapp-button svg{
+
+    font-size:1.5rem;
+
+}
+
+.whatsapp-button:hover{
+
+    background:#1fb657;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+/* GRID */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/* TARJETAS */
+
+.contact-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.12);
+
+}
+
+/* ICONOS */
+
+.contact-card svg{
+
+    font-size:2.8rem;
+
+    color:#229342;
+
+    margin-bottom:20px;
+
+}
+
+/* TITULOS */
+
+.contact-card h3{
+
+    margin-bottom:10px;
+
+    color:#229342;
+
+    font-size:1.3rem;
+
+}
+
+.contact-card p{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .contact-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contact{
+
+        padding:60px 25px;
+
+    }
+
+    .contact h2{
+
+        font-size:2rem;
+
+    }
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .whatsapp-button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}

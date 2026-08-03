@@ -1,0 +1,179 @@
+.schedule{
+    padding:80px 10%;
+    background:#f8f8f8;
+}
+
+.schedule .section-tag{
+    display:inline-block;
+    background:#e7f6ec;
+    color:#229342;
+    padding:8px 18px;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.schedule h2{
+    font-size:2.5rem;
+    color:#229342;
+    margin-bottom:15px;
+}
+
+.schedule .subtitle{
+    max-width:700px;
+    color:#666;
+    line-height:1.7;
+    margin-bottom:50px;
+}
+
+.schedule-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+@media(max-width:992px){
+
+    .schedule-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .schedule{
+
+        padding:60px 25px;
+
+    }
+
+    .schedule h2{
+
+        font-size:2rem;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .schedule-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .schedule{
+
+        padding:60px 25px;
+
+    }
+
+    .schedule h2{
+
+        font-size:2rem;
+
+    }
+
+}
+
+
+.schedule-header{
+
+    background:#229342;
+
+    color:white;
+
+    padding:25px;
+
+}
+
+.schedule-header h3{
+
+    font-size:1.6rem;
+
+    margin-bottom:8px;
+
+}
+
+.schedule-header p{
+
+    opacity:.9;
+
+}
+
+.schedule-header{
+
+    background:#229342;
+
+    color:white;
+
+    padding:25px;
+
+}
+
+.schedule-header h3{
+
+    font-size:1.6rem;
+
+    margin-bottom:8px;
+
+}
+
+.schedule-header p{
+
+    opacity:.9;
+
+}
+
+
+.schedule-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.schedule-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.day{
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.time{
+
+    color:#229342;
+
+    font-weight:700;
+
+}
+
+.time{
+
+    color:#229342;
+
+    font-weight:700;
+
+}
