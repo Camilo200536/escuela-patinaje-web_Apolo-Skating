@@ -1,0 +1,79 @@
+.gallery{
+
+    padding:80px 10%;
+
+    background:#f8f8f8;
+
+    text-align:center;
+
+}
+
+.gallery .section-tag{
+
+    display:inline-block;
+
+    background:#e7f6ec;
+
+    color:#229342;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.gallery h2{
+
+    font-size:2.5rem;
+
+    color:#229342;
+
+    margin-bottom:20px;
+
+}
+
+.gallery .subtitle{
+
+    max-width:750px;
+
+    margin:0 auto 50px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* GRID */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .gallery{
+
+        padding:60px 25px;
+
+    }
+
+    .gallery h2{
+
+        font-size:2rem;
+
+    }
+
+}

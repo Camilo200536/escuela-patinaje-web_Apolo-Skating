@@ -44,7 +44,7 @@ function Contact() {
                 <div className="contact-grid">
 
                     <a
-                        href="https://instagram.com/"
+                        href="https://www.instagram.com/patinaje_apolo_skating_pereira?igsh=Nzkyc2pwZmliZTYz"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-card"
@@ -59,7 +59,7 @@ function Contact() {
                     </a>
 
                     <a
-                        href="https://facebook.com/"
+                        href="https://www.facebook.com/share/1HJuKyawCd/?mibextid=wwXIfr"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="contact-card"
