@@ -35,7 +35,7 @@ function Navbar() {
 >
 
   <span className="menu-text">
-    Menú de navegación
+    Menú
   </span>
 
   <span className="menu-icon">
