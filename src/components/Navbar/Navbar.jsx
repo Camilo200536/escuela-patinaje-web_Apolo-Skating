@@ -1,62 +1,62 @@
+
 import { useState } from "react";
 import "./Navbar.css";
+
 import logoApolo from "../../assets/images/Logo/logo-apolo.jpeg";
+
+import NavLinks from "./NavLinks";
+import MobileMenu from "./MobileMenu";
 
 function Navbar() {
 
-  const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen,setMenuOpen]=useState(false);
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+    return(
 
-  return (
+<header className="navbar">
 
-    <header className="navbar">
+<div className="container">
 
-      <div className="container">
+<div className="logo">
 
-        <div className="logo">
-          <img src={logoApolo} alt="Logo Apolo Skating" />
-        </div>
+<img src={logoApolo} alt="Logo"/>
 
-        {/* Botón hamburguesa */}
-        <button
-          className="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          ☰
-        </button>
+</div>
 
-        <nav className={menuOpen ? "nav active" : "nav"}>
+<nav className="desktop-nav">
 
-          <ul className="nav-links">
+<NavLinks/>
 
-            <li><a href="#inicio" onClick={closeMenu}>Inicio</a></li>
+</nav>
 
-            <li><a href="#nosotros" onClick={closeMenu}>Nosotros</a></li>
+<button
+className="menu-toggle"
+onClick={()=>setMenuOpen(true)}
+>
 
-            <li><a href="#programas" onClick={closeMenu}>Programas</a></li>
+☰
 
-            <li><a href="#horarios" onClick={closeMenu}>Horarios</a></li>
+</button>
 
-            <li><a href="#galeria-docentes" onClick={closeMenu}>Galería y Docentes</a></li>
+<button className="btn-primary">
 
-            <li><a href="#contacto" onClick={closeMenu}>Contacto</a></li>
+Inscríbete
 
-          </ul>
+</button>
 
-        </nav>
+<MobileMenu
 
-        <button className="btn-primary">
-          Inscríbete
-        </button>
+menuOpen={menuOpen}
 
-      </div>
+closeMenu={()=>setMenuOpen(false)}
 
-    </header>
+/>
 
-  );
+</div>
+
+</header>
+
+    );
 
 }
 
