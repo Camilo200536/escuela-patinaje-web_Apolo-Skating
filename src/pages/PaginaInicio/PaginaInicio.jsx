@@ -10,8 +10,8 @@ import Explore from "../../components/Explore/Explore";
 
 function Home() {
     return (
-        <>
-            
+        <div className="pagina-inicio">
+
             <Navbar />
             <Hero />
             <About />
@@ -20,8 +20,8 @@ function Home() {
             <Contact />
             <ScrollToTop />
             <Explore />
-            
-        </>
+
+        </div>
     );
 }
 
