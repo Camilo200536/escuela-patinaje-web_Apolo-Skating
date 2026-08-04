@@ -6,7 +6,6 @@ import Programs from "../../components/Programs/Programs";
 import Schedule from "../../components/Schedule/Schedule";
 import Contact from "../../components/Contact/Contact";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
-import Gallery from "../../components/Gallery/Gallery";
 import Explore from "../../components/Explore/Explore";
 
 function Home() {
@@ -18,7 +17,6 @@ function Home() {
             <About />
             <Programs />
             <Schedule />
-            <Gallery />
             <Contact />
             <ScrollToTop />
             <Explore />

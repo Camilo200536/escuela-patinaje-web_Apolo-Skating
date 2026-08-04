@@ -1,62 +1,67 @@
 import "./Explore.css";
-import { Link } from "react-router-dom";
 
-function Explore() {
-    return (
-        <section className="explore">
+import ExploreCard from "../ExploreCard/ExploreCard";
 
-            <h2>Descubre más sobre Apolo Skating</h2>
+import galleryImage from "../../assets/images/Gallery/placeholder.jpeg";
+import teachersImage from "../../assets/images/Teachers/placeholder.jpeg";
+
+function Explore(){
+
+    return(
+
+        
+
+        <section className="explore-section"
+        id="galeria-docentes">
+
+            <h1>
+
+                Sigue explorando Apolo Skating
+
+            </h1>
 
             <p>
-                Conoce nuestro equipo de entrenadores y revive los mejores momentos
-                de nuestra escuela.
+
+                Descubre nuestra galería y conoce el equipo humano que hace posible el crecimiento de nuestros deportistas.
+
             </p>
 
-            <div className="explore-grid">
+            <ExploreCard
 
-                <div className="explore-card">
+                image={galleryImage}
 
-                    <span className="explore-icon">📷</span>
+                title="Galería"
 
-                    <h3>Galería</h3>
+                description="Revive nuestros entrenamientos, festivales, competencias y los mejores momentos vividos por nuestros deportistas."
 
-                    <p>
-                        Explora fotografías y videos de entrenamientos,
-                        competencias y eventos.
-                    </p>
+                buttonText="Ver Galería"
 
-                    <Link
-                        to="/galeria"
-                        className="explore-button"
-                    >
-                        Ver Galería
-                    </Link>
+                link="/galeria"
 
-                </div>
+            />
 
-                <div className="explore-card">
+            <ExploreCard
 
-                    <span className="explore-icon">👨‍🏫</span>
+                image={teachersImage}
 
-                    <h3>Profesores</h3>
+                title="Nuestros Profesores"
 
-                    <p>
-                        Conoce a nuestro equipo de entrenadores y su experiencia.
-                    </p>
+                description="Conoce a nuestros entrenadores, su experiencia y la pasión con la que acompañan el proceso deportivo de cada estudiante."
 
-                    <Link
-                        to="/profesores"
-                        className="explore-button"
-                    >
-                        Ver Profesores
-                    </Link>
+                buttonText="Conocer Profesores"
 
-                </div>
+                link="/profesores"
 
-            </div>
+            />
+
+            
 
         </section>
+
+        
+
     );
+
 }
 
 export default Explore;

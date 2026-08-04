@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import logoApolo from "../../assets/images//Logo/logo-apolo.jpeg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -16,8 +17,8 @@ function Navbar() {
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#programas">Programas</a></li>
             <li><a href="#horarios">Horarios</a></li>
-            <li><a href="#galeria">Galería</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#galeria-docentes">Galería y Docentes</a></li>
             
           </ul>
         </nav>

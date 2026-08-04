@@ -1,4 +1,5 @@
 import "./GalleryPage.css";
+import Gallery from "../../components/Gallery/Gallery";
 
 function GalleryPage(){
 
@@ -10,7 +11,7 @@ function GalleryPage(){
 
             <p>
 
-                Muy pronto encontrarás aquí nuestras fotografías y videos.
+               <Gallery />
 
             </p>
 
