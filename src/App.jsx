@@ -1,9 +1,12 @@
 import "./App.css";
 import "./styles/global.css";
-import PaginaInicio from "./pages/PaginaInicio/PaginaInicio";
+
+import AppRouter from "./routes/AppRouter";
 
 function App() {
-    return <PaginaInicio />;
+
+    return <AppRouter />;
+
 }
 
 export default App;

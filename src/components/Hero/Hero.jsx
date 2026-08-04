@@ -9,11 +9,11 @@ function Hero() {
         <div className="hero-text">
 
           <span className="hero-tag">
-            Escuela de Patinaje
+            Club inscrito en la liga Risaraldense de patinaje
           </span>
 
           <h1>
-            Formando campeones sobre ruedas
+            Club de patinaje Apolo skating Pereira y dosquebradas 
           </h1>
 
           <p>

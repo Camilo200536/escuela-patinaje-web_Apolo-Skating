@@ -7,6 +7,7 @@ import Schedule from "../../components/Schedule/Schedule";
 import Contact from "../../components/Contact/Contact";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 import Gallery from "../../components/Gallery/Gallery";
+import Explore from "../../components/Explore/Explore";
 
 function Home() {
     return (
@@ -20,6 +21,7 @@ function Home() {
             <Gallery />
             <Contact />
             <ScrollToTop />
+            <Explore />
             
         </>
     );

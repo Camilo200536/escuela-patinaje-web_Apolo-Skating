@@ -1,0 +1,89 @@
+.explore {
+    padding: 90px 10%;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.explore h2 {
+    font-size: 2.5rem;
+    color: #229342;
+    margin-bottom: 15px;
+}
+
+.explore > p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.explore-card {
+    background: white;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.explore-card:hover {
+    transform: translateY(-8px);
+}
+
+.explore-icon {
+    font-size: 4rem;
+}
+
+.explore-card h3 {
+    margin: 20px 0;
+    color: #229342;
+}
+
+.explore-card p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.explore-button {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #229342;
+
+    color: white;
+
+    padding: 12px 30px;
+
+    border-radius: 50px;
+
+    transition: .3s;
+}
+
+.explore-button:hover{
+
+    background:#176b30;
+
+}
+
+@media (max-width:768px){
+
+.explore-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.explore-card{
+
+padding:35px 25px;
+
+}
+
+}

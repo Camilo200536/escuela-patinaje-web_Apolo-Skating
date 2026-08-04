@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logoApolo from "../../assets/images//Logo/logo-apolo.png";
+import logoApolo from "../../assets/images//Logo/logo-apolo.jpeg";
 
 function Navbar() {
   return (
