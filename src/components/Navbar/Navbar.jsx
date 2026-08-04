@@ -30,13 +30,20 @@ function Navbar() {
 </nav>
 
 <button
-className="menu-toggle"
-onClick={()=>setMenuOpen(true)}
+  className="menu-toggle"
+  onClick={() => setMenuOpen(true)}
 >
 
-☰
+  <span className="menu-text">
+    Menú de navegación
+  </span>
+
+  <span className="menu-icon">
+    ☰
+  </span>
 
 </button>
+
 
 <button className="btn-primary">
 
