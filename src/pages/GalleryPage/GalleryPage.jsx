@@ -7,8 +7,6 @@ function GalleryPage(){
 
         <div className="gallery-page">
 
-            <h1>Galería Apolo Skating</h1>
-
             <p>
 
                <Gallery />

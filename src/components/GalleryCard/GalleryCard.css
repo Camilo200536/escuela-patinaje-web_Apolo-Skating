@@ -1,19 +1,8 @@
-.gallery-card{
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:20px;
-
-    cursor:pointer;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
-
-    transition:.4s;
-
-    background:white;
-
+.gallery-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .gallery-card:hover{
@@ -39,6 +28,7 @@
 
 }
 
+
 .gallery-card:hover img,
 .gallery-card:hover video{
 
@@ -46,42 +36,17 @@
 
 }
 
-/* CAPA OSCURA */
 
-.gallery-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:flex-end;
-
-    padding:25px;
-
-    background:linear-gradient(
-        transparent,
-        rgba(0,0,0,.80)
-    );
-
-    transition:.4s;
-
-}
 
 /* TITULO */
 
 .gallery-overlay h3{
 
-    color:white;
-
-    font-size:1.3rem;
-
-    font-weight:600;
-
-    margin:0;
+    padding: 18px 20px;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
 
 }
 
@@ -90,8 +55,22 @@
 .gallery-card:hover .gallery-overlay{
 
     background:linear-gradient(
-        rgba(0,0,0,.20),
-        rgba(0,0,0,.85)
+        white,
     );
+
+}
+
+/* RESPONSIVE PARA EL CELULAR */
+
+@media (max-width: 768px) {
+
+    .gallery-card img {
+        height: 230px;
+    }
+
+    .gallery-title {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
 
 }
