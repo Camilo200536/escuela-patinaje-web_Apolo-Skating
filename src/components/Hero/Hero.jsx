@@ -33,16 +33,13 @@ function Hero() {
             >
     Inscríbete
             </a>
-         <a 
-  href="/conocenos"
-  className="btn-primary"
-  onClick={(e) => {
-    // Fuerza la navegación en móvil
-    window.location.href = "/conocenos";
-  }}
->
-  Conócenos
-</a>
+          <a 
+    href="/conocenos"
+    //target="_blank"
+    rel="noopener noreferrer"
+    className="btn-primary">
+              Conócenos
+          </a>
 
           
           </div>
