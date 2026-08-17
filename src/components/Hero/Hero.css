@@ -1,3 +1,7 @@
+/* ============================= */
+/* HERO - APOLO SKATING */
+/* ============================= */
+
 .hero {
   min-height: calc(100vh - 90px);
   display: flex;
@@ -7,6 +11,8 @@
     #ffffff 0%,
     #f7fbf8 100%
   );
+  padding: 40px 20px;  /* ← AÑADÍ padding para dar espacio */
+  overflow: visible;   /* ← IMPORTANTE: evita que se corten los botones */
 }
 
 .hero-content {
@@ -14,6 +20,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero-text {
@@ -27,6 +36,7 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 0.9rem;
 }
 
 .hero h1 {
@@ -47,7 +57,41 @@
 .hero-buttons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;  /* ← AÑADÍ para que envuelvan si es necesario */
 }
+
+/* ============================= */
+/* BOTONES - ESTILOS BASE */
+/* ============================= */
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #229342;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background: #1a7a36;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(34, 147, 66, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* ============================= */
+/* IMAGEN DEL HERO */
+/* ============================= */
 
 .hero-image {
   flex: 1;
@@ -60,36 +104,163 @@
   max-width: 520px;
   border-radius: 24px;
   box-shadow: 0 20px 50px rgba(0,0,0,.15);
+  transition: transform 0.4s ease;
 }
 
+.hero-image img:hover {
+  transform: scale(1.02);
+}
+
+/* ============================= */
+/* TABLET - PANTALLAS MEDIANAS */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content {
+    gap: 40px;
+  }
+
+  .hero-buttons {
+    gap: 15px;
+  }
+
+  .btn-primary {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================= */
+/* MÓVIL - PANTALLAS PEQUEÑAS */
+/* ============================= */
 
 @media (max-width: 768px) {
-
-  .hero-content{
-
-      flex-direction: column;
-      text-align: center;
-      gap:40px;
-
+  .hero {
+    min-height: auto;  /* ← CAMBIÉ para que no ocupe toda la pantalla */
+    padding: 60px 20px 80px;
+    overflow: visible;
   }
 
-  .hero h1{
-
-      font-size:2.4rem;
-
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
   }
 
-  .hero p{
-
-      max-width:100%;
-
+  .hero-text {
+    width: 100%;
   }
 
-  .hero-buttons{
-
-      justify-content:center;
-      flex-wrap:wrap;
-
+  .hero h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
   }
 
+  .hero p {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .hero-tag {
+    font-size: 0.8rem;
+  }
+
+  /* ⬇️⬇️⬇️ PARTE CRÍTICA: LOS BOTONES ⬇️⬇️⬇️ */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;     /* ← uno debajo del otro */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons a {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50px;
+    background: #229342;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-buttons .btn-primary:hover,
+  .hero-buttons a:hover {
+    background: #1a7a36;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(34, 147, 66, 0.3);
+  }
+
+  .hero-buttons .btn-primary:active,
+  .hero-buttons a:active {
+    transform: translateY(0);
+  }
+
+  /* Estilo específico para el botón "Conócenos" (si quieres que sea diferente) */
+  .hero-buttons a:last-child {
+    background: transparent;
+    color: #229342;
+    border: 2px solid #229342;
+  }
+
+  .hero-buttons a:last-child:hover {
+    background: #229342;
+    color: white;
+  }
+
+  /* IMAGEN EN MÓVIL */
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+
+/* ============================= */
+/* MÓVIL MUY PEQUEÑO (≤ 480px) */
+/* ============================= */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 15px 60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons a {
+    max-width: 100%;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
 }
