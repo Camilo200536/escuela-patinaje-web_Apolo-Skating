@@ -29,7 +29,7 @@ function Contact() {
                 </p>
 
                 <a
-                    href="https://wa.me/573001112233?text=Hola,%20quiero%20información%20sobre%20las%20clases%20de%20Apolo%20Skating."
+                    href="https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20inscribirme%20en%20Apolo%20Skating."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="whatsapp-button"
