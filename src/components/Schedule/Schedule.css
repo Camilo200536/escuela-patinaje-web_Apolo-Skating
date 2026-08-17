@@ -5,7 +5,7 @@
 .schedule-section {
   width: 100%;
   padding: 80px 20px;
-  background:#e8f5ee; 
+  background:white
 }
 
 .schedule-container {
@@ -59,7 +59,7 @@
 }
 
 .schedule-card {
-  background: white;
+  background: #e8f5ee;
   border-radius: 22px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   padding: 25px 30px;

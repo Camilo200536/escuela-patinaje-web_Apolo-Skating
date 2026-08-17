@@ -6,7 +6,7 @@
   min-height: calc(100vh - 90px);
   display: flex;
   align-items: center;
-  background: #e8f5ee; 
+  background: white;
   padding: 40px 20px;  /* ← AÑADÍ padding para dar espacio */
   overflow: visible;   /* ← IMPORTANTE: evita que se corten los botones */
 }

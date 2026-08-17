@@ -1,13 +1,13 @@
 .contact{
     padding:80px 10%;
-    background:#e8f5ee; 
+    background:white;
     text-align:center;
 }
 
 .contact .section-tag{
 
     display:inline-block;
-    background:#e7f6ec;
+    background:#e8f5ee;
     color:#229342;
     padding:8px 18px;
     border-radius:50px;
@@ -91,7 +91,7 @@
 
 .contact-card{
 
-    background:white;
+    background:#e8f5ee;
 
     border-radius:20px;
 
