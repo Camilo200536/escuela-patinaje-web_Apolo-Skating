@@ -2,6 +2,7 @@ import iniciacion from "../assets/images/Programs/Iniciacion.jpeg";
 import nivel1 from "../assets/images/Programs/Nivel_1.jpeg";
 import nivel2 from "../assets/images/Programs/Nivel_2.jpeg";
 import nivel3 from "../assets/images/Programs/Nivel_3.jpeg";
+import nivel4 from "../assets/images/Programs/Nivel_4.jpeg";
 import competitivo from "../assets/images/Programs/Profesional.jpeg";
 import adultos from "../assets/images/Programs/Adultos.jpeg";
 
@@ -30,7 +31,7 @@ const programs = [
     image: nivel2,
     title: "Nivel 2",
     description: "Perfeccionamiento de la técnica y coordinación.",
-    level: "Semiprofesional",
+    level: "Recreativo",
     age: "Según evaluación",
     buttonText: "Más información",
   },
@@ -38,13 +39,23 @@ const programs = [
     id: 4,
     image: nivel3,
     title: "Nivel 3",
-    description: "Preparación para avanzar al nivel competitivo.",
+    description: "Iniciacion en nivel semiprofesional",
     level: "Semiprofesional",
-    age: "7 años en adelante",
+    age: "Según evaluación",
     buttonText: "Más información",
   },
-  {
+ {
     id: 5,
+    image: nivel4,
+    title: "Nivel 4",
+    description: "Preparación para avanzar al nivel competitivo.",
+    level: "Semiprofesional",
+    age: "Según evaluación",
+    buttonText: "Más información",
+  },
+
+  {
+    id: 6,
     image: competitivo,
     title: "Competitivo",
     description: "Entrenamiento de alto rendimiento para competencias oficiales.",
@@ -53,7 +64,7 @@ const programs = [
     buttonText: "Más información",
   },
   {
-    id: 6,
+    id: 7,
     image: adultos,
     title: "Adultos",
     description: "Programa para aprender y disfrutar del patinaje sin importar la experiencia previa.",
