@@ -88,13 +88,36 @@ function Contact() {
 
                     <div className="contact-card">
 
-                        <FaMapMarkerAlt />
+    <FaMapMarkerAlt />
 
-                        <h3>Sedes</h3>
+    <h3>Sedes</h3>
 
-                        <p>Pereira y Dosquebradas</p>
+    <p>Visítanos en nuestras sedes:</p>
 
-                    </div>
+    <div className="locations">
+
+        <a
+            href="https://share.google/Sg5m1y1vJlbzkCDDS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="location-button"
+        >
+            📍 Pereira
+            <br />
+        </a>
+
+        <a
+            href="https://share.google/qC5AeX8yI6TRSu0SX"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="location-button"
+        >
+            📍 Dosquebradas
+        </a>
+
+    </div>
+
+</div>
 
                 </div>
 
