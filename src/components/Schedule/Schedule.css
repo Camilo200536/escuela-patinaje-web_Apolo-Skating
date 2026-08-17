@@ -1,179 +1,210 @@
-.schedule{
-    padding:80px 10%;
-    background:#f8f8f8;
+/* ============================= */
+/* SECCIÓN HORARIOS */
+/* ============================= */
+
+.schedule {
+    padding: 90px 8%;
+    background: #f5f8f8;
 }
 
-.schedule .section-tag{
-    display:inline-block;
-    background:#e7f6ec;
-    color:#229342;
-    padding:8px 18px;
-    border-radius:50px;
-    font-weight:600;
-    margin-bottom:20px;
+/* Etiqueta superior */
+
+.schedule .section-tag {
+    display: inline-block;
+    background: #e3f3f3;
+    color: #3BAA34;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.schedule h2{
-    font-size:2.5rem;
-    color:#229342;
-    margin-bottom:15px;
+/* Título */
+
+.schedule h2 {
+    font-size: 2.5rem;
+    color: #3BAA34;
+    margin-bottom: 15px;
 }
 
-.schedule .subtitle{
-    max-width:700px;
-    color:#666;
-    line-height:1.7;
-    margin-bottom:50px;
+/* Descripción */
+
+.schedule .subtitle {
+    max-width: 700px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 50px;
 }
 
-.schedule-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
+/* ============================= */
+/* CONTENEDOR DE HORARIOS */
+/* ============================= */
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
-@media(max-width:992px){
+/* ============================= */
+/* TARJETA */
+/* ============================= */
 
-    .schedule-grid{
+.schedule-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e3eeee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        grid-template-columns:1fr;
+.schedule-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
 
+/* ============================= */
+/* ENCABEZADO */
+/* ============================= */
+
+.schedule-header {
+    background: #3BAA34;
+    color: white;
+    padding: 25px 28px;
+}
+
+.schedule-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.schedule-header p {
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* ============================= */
+/* FILAS */
+/* ============================= */
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px 28px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.schedule-row:last-child {
+    border-bottom: none;
+}
+
+/* Día */
+
+.day {
+    font-weight: 700;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Hora */
+
+.time {
+    color: #3BAA34;
+    font-weight: 800;
+    background: #e8f5f5;
+    padding: 7px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
     }
 
 }
 
-@media(max-width:768px){
 
-    .schedule{
+/* ============================= */
+/* CELULAR */
+/* ============================= */
 
-        padding:60px 25px;
+@media (max-width: 768px) {
 
+    .schedule {
+        padding: 60px 20px;
     }
 
-    .schedule h2{
+    .schedule h2 {
+        font-size: 2rem;
+    }
 
-        font-size:2rem;
+    .schedule .subtitle {
+        margin-bottom: 35px;
+    }
 
+    .schedule-grid {
+        gap: 25px;
+    }
+
+    .schedule-header {
+        padding: 22px;
+    }
+
+    .schedule-header h3 {
+        font-size: 1.35rem;
+    }
+
+    .schedule-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 18px 22px;
+    }
+
+    .day {
+        font-size: 1rem;
+    }
+
+    .time {
+        width: fit-content;
+        font-size: 0.95rem;
     }
 
 }
 
-@media(max-width:992px){
 
-    .schedule-grid{
+/* ============================= */
+/* CELULARES PEQUEÑOS */
+/* ============================= */
 
-        grid-template-columns:1fr;
+@media (max-width: 480px) {
 
+    .schedule {
+        padding: 50px 15px;
     }
 
-}
-
-@media(max-width:768px){
-
-    .schedule{
-
-        padding:60px 25px;
-
+    .schedule h2 {
+        font-size: 1.8rem;
     }
 
-    .schedule h2{
-
-        font-size:2rem;
-
+    .schedule-header {
+        padding: 20px;
     }
 
-}
-
-
-.schedule-header{
-
-    background:#229342;
-
-    color:white;
-
-    padding:25px;
-
-}
-
-.schedule-header h3{
-
-    font-size:1.6rem;
-
-    margin-bottom:8px;
-
-}
-
-.schedule-header p{
-
-    opacity:.9;
-
-}
-
-.schedule-header{
-
-    background:#229342;
-
-    color:white;
-
-    padding:25px;
-
-}
-
-.schedule-header h3{
-
-    font-size:1.6rem;
-
-    margin-bottom:8px;
-
-}
-
-.schedule-header p{
-
-    opacity:.9;
-
-}
-
-
-.schedule-row{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:15px 0;
-
-    border-bottom:1px solid #ececec;
-
-}
-
-.schedule-row:last-child{
-
-    border-bottom:none;
-
-}
-
-.day{
-
-    font-weight:600;
-
-    color:#333;
-
-}
-
-.time{
-
-    color:#229342;
-
-    font-weight:700;
-
-}
-
-.time{
-
-    color:#229342;
-
-    font-weight:700;
+    .schedule-row {
+        padding: 17px 20px;
+    }
 
 }
