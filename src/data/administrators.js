@@ -1,6 +1,6 @@
-import administrators1 from "../assets/images/Administrator/Yuri.jpeg";
-import administrators2 from "../assets/images/Administrator/Diana.jpg";
-import administrators3 from "../assets/images/Administrator/Sonia.jpeg";
+import administrators1 from "../assets/images/Teachers/Yuri.jpeg";
+import administrators2 from "../assets/images/Teachers/Diana.jpg";
+import administrators3 from "../assets/images/Teachers/Sonia.jpeg";
 
 const administrators = [
 
