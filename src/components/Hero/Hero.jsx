@@ -1,5 +1,6 @@
 import "./Hero.css";
 import heroImage from "../../assets/images/Hero/imagen_principal.jpeg";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -32,13 +33,18 @@ function Hero() {
             >
     Inscríbete
             </a>
-          <a 
-    href="/conocenos"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn-primary">
-              Conócenos
-          </a>
+         <a 
+  href="/conocenos"
+  className="btn-primary"
+  onClick={(e) => {
+    // Fuerza la navegación en móvil
+    window.location.href = "/conocenos";
+  }}
+>
+  Conócenos
+</a>
+
+          
           </div>
 
         </div>
