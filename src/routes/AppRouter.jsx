@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GalleryPage from "../pages/GalleryPage/GalleryPage";
 import TeachersPage from "../pages/TeachersPage/TeachersPage";
 import PaginaInicio from "../pages/PaginaInicio/PaginaInicio";
+import AboutPage from "../pages/AboutPage/AboutPage";
 
 function AppRouter() {
 
@@ -26,9 +27,15 @@ function AppRouter() {
         element={<TeachersPage />}
     />
 
+    <Route
+         path="/conocenos" 
+         element={<AboutPage />} 
+    />
+
 </Routes>
 
         </BrowserRouter>
+
 
     );
 

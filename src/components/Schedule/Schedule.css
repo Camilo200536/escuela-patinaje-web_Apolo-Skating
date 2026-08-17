@@ -12,7 +12,7 @@
 .schedule .section-tag {
     display: inline-block;
     background: #e3f3f3;
-    color: #3BAA34;
+    color: #229342;
     padding: 8px 18px;
     border-radius: 50px;
     font-weight: 700;
@@ -23,7 +23,7 @@
 
 .schedule h2 {
     font-size: 2.5rem;
-    color: #3BAA34;
+    color: #229342;
     margin-bottom: 15px;
 }
 
@@ -69,7 +69,7 @@
 /* ============================= */
 
 .schedule-header {
-    background: #3BAA34;
+    background: #229342;
     color: white;
     padding: 25px 28px;
 }
@@ -115,7 +115,7 @@
 /* Hora */
 
 .time {
-    color: #3BAA34;
+    color: #229342;
     font-weight: 800;
     background: #e8f5f5;
     padding: 7px 12px;

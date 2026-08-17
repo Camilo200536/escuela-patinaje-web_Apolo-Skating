@@ -32,11 +32,13 @@ function Hero() {
             >
     Inscríbete
             </a>
-
-            <button className="btn-primary">
+          <a 
+    href="/conocenos"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn-primary">
               Conócenos
-            </button>
-
+          </a>
           </div>
 
         </div>
