@@ -76,14 +76,7 @@ const schedule = [
         ],
       },
       {
-        day: "Martes",
-        classes: [
-        "4:30 PM - 6:00 PM📍 Pista la Giralda (Frailes)",
-        "6:30 PM - 8:00 PM📍 Pista Montebonito",
-        ],
-      },
-      {
-        day: "Martes",
+        day: "Miercoles",
         classes: [
         "4:30 PM - 6:00 PM📍 Pista la Giralda (Frailes)",
         "6:30 PM - 8:00 PM📍 Pista Montebonito",
@@ -91,6 +84,13 @@ const schedule = [
       },
       {
         day: "Jueves",
+        classes: [
+        "4:30 PM - 6:00 PM📍 Pista la Giralda (Frailes)",
+        "6:30 PM - 8:00 PM📍 Pista Montebonito",
+        ],
+      },
+      {
+        day: "Viernes",
         classes: [
         "4:30 PM - 6:00 PM📍 Pista la Giralda (Frailes)",
         "6:30 PM - 8:00 PM📍 Pista Montebonito",

@@ -2,8 +2,8 @@ import "./Explore.css";
 
 import ExploreCard from "../ExploreCard/ExploreCard";
 
-import galleryImage from "../../assets/images/Gallery/placeholder.jpeg";
-import teachersImage from "../../assets/images/Teachers/placeholder.jpeg";
+import galleryImage from "../../assets/images/Gallery/Gallery.png";
+import teachersImage from "../../assets/images/Teachers/Profes.png";
 
 function Explore(){
 

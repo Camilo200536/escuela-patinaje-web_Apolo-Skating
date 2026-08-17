@@ -1,0 +1,41 @@
+.teachers-page{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:80px 0;
+
+}
+
+.teachers-page h1{
+
+    text-align:center;
+
+    color:#229342;
+
+    margin-bottom:20px;
+
+}
+
+.subtitle{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.teachers-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}

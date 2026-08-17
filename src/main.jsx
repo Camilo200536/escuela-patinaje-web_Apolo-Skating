@@ -4,6 +4,7 @@ import './index.css'
 import AppRouter from "./routes/AppRouter";
 import App from "./App";
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />

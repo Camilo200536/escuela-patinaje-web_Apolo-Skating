@@ -20,16 +20,13 @@
 
 }
 
-.explore-card img{
-
-    width:100%;
-
-    height:420px;
-
-    object-fit:cover;
-
-    transition:.5s;
-
+.explore-card img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 35%;
+    display: block;
+    transition: transform .35s ease;
 }
 
 .explore-card:hover img{
@@ -98,24 +95,19 @@
 
 
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-.explore-card img{
+    .explore-card img {
+        height: 350px;
+        object-position: center top;
+    }
 
-height:260px;
+    .explore-content {
+        padding: 25px;
+    }
 
-}
-
-.explore-content{
-
-padding:25px;
-
-}
-
-.explore-content h2{
-
-font-size:1.7rem;
-
-}
+    .explore-content h2 {
+        font-size: 1.7rem;
+    }
 
 }
