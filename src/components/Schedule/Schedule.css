@@ -1,67 +1,16 @@
 /* ============================= */
-/* SECCIÓN HORARIOS */
+/* SECCIÓN DE HORARIOS */
 /* ============================= */
 
-.schedule {
-    padding: 90px 8%;
-    background: #f5f8f8;
+.schedule-section {
+  width: 100%;
+  padding: 80px 20px;
+  background:#e8f5ee; 
 }
 
-/* Etiqueta superior */
-
-.schedule .section-tag {
-    display: inline-block;
-    background: #e3f3f3;
-    color: #229342;
-    padding: 8px 18px;
-    border-radius: 50px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-/* Título */
-
-.schedule h2 {
-    font-size: 2.5rem;
-    color: #229342;
-    margin-bottom: 15px;
-}
-
-/* Descripción */
-
-.schedule .subtitle {
-    max-width: 700px;
-    color: #666;
-    line-height: 1.8;
-    margin-bottom: 50px;
-}
-
-/* ============================= */
-/* CONTENEDOR DE HORARIOS */
-/* ============================= */
-
-.schedule-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-/* ============================= */
-/* TARJETA */
-/* ============================= */
-
-.schedule-card {
-    background: white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e3eeee;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.schedule-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+.schedule-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ============================= */
@@ -69,142 +18,320 @@
 /* ============================= */
 
 .schedule-header {
-    background: #229342;
-    color: white;
-    padding: 25px 28px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.schedule-header h3 {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+.schedule-tag {
+  display: inline-block;
+  background: #e2f1f1;
+  color: #229342;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.schedule-header h2 {
+  font-size: 2.8rem;
+  color: #229342;
+  margin-bottom: 20px;
 }
 
 .schedule-header p {
-    margin: 0;
-    opacity: 0.9;
-    line-height: 1.5;
+  max-width: 650px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1.15rem;
+  line-height: 1.7;
 }
 
 /* ============================= */
-/* FILAS */
+/* TARJETAS DE DÍAS */
 /* ============================= */
 
-.schedule-row {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 20px;
-
-    padding: 20px 28px;
-
-    border-bottom: 1px solid #eeeeee;
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
 
-.schedule-row:last-child {
-    border-bottom: none;
+.schedule-card {
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 25px 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
 }
 
-/* Día */
-
-.day {
-    font-weight: 700;
-    color: #333;
-    font-size: 1rem;
+.schedule-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
-/* Hora */
-
-.time {
-    color: #229342;
-    font-weight: 800;
-    background: #e8f5f5;
-    padding: 7px 12px;
-    border-radius: 8px;
-    white-space: nowrap;
+.schedule-card.active {
+  border-color: #229342;
+  background: #fafffe;
+  box-shadow: 0 15px 40px rgba(34, 147, 66, 0.15);
 }
-
 
 /* ============================= */
-/* TABLET */
+/* CABECERA DE LA TARJETA */
+/* ============================= */
+
+.schedule-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.schedule-day-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.schedule-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.schedule-card-header h3 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ============================= */
+/* BOTÓN DE DESPLEGAR */
+/* ============================= */
+
+.schedule-toggle {
+  background: #229342;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-width: 130px;
+}
+
+.schedule-toggle:hover {
+  background: #1a7a36;
+  transform: scale(1.02);
+}
+
+.schedule-card.active .schedule-toggle {
+  background: #e74c3c;
+}
+
+.schedule-card.active .schedule-toggle:hover {
+  background: #c0392b;
+}
+
+/* ============================= */
+/* DESPLEGABLE (DROPDOWN) */
+/* ============================= */
+
+.schedule-dropdown {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 2px solid #eef5f2;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.schedule-sede {
+  margin-bottom: 20px;
+}
+
+.schedule-sede:last-child {
+  margin-bottom: 0;
+}
+
+.sede-title {
+  font-size: 1.1rem;
+  color: #229342;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px dashed #e2f1f1;
+}
+
+/* ============================= */
+/* LISTA DE HORARIOS */
+/* ============================= */
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background: #f7fbf9;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.schedule-item:hover {
+  background: #eef5f2;
+  transform: translateX(4px);
+}
+
+.schedule-level {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+}
+
+.schedule-time {
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* RESPONSIVE - TABLET */
 /* ============================= */
 
 @media (max-width: 992px) {
-
-    .schedule-grid {
-        grid-template-columns: 1fr;
-    }
-
+  .schedule-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
 
-
 /* ============================= */
-/* CELULAR */
+/* RESPONSIVE - MÓVIL */
 /* ============================= */
 
 @media (max-width: 768px) {
+  .schedule-section {
+    padding: 60px 15px;
+  }
 
-    .schedule {
-        padding: 60px 20px;
-    }
+  .schedule-header h2 {
+    font-size: 2.2rem;
+  }
 
-    .schedule h2 {
-        font-size: 2rem;
-    }
+  .schedule-header p {
+    font-size: 1rem;
+  }
 
-    .schedule .subtitle {
-        margin-bottom: 35px;
-    }
+  .schedule-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
-    .schedule-grid {
-        gap: 25px;
-    }
+  .schedule-card {
+    padding: 20px;
+  }
 
-    .schedule-header {
-        padding: 22px;
-    }
+  .schedule-card-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
 
-    .schedule-header h3 {
-        font-size: 1.35rem;
-    }
+  .schedule-day-info {
+    justify-content: center;
+  }
 
-    .schedule-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 18px 22px;
-    }
+  .schedule-card-header h3 {
+    font-size: 1.5rem;
+  }
 
-    .day {
-        font-size: 1rem;
-    }
+  .schedule-toggle {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    min-width: auto;
+  }
 
-    .time {
-        width: fit-content;
-        font-size: 0.95rem;
-    }
+  .schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 12px 15px;
+  }
 
+  .schedule-time {
+    font-size: 0.85rem;
+  }
 }
 
-
 /* ============================= */
-/* CELULARES PEQUEÑOS */
+/* RESPONSIVE - MÓVIL PEQUEÑO */
 /* ============================= */
 
 @media (max-width: 480px) {
+  .schedule-section {
+    padding: 40px 12px;
+  }
 
-    .schedule {
-        padding: 50px 15px;
-    }
+  .schedule-header h2 {
+    font-size: 1.8rem;
+  }
 
-    .schedule h2 {
-        font-size: 1.8rem;
-    }
+  .schedule-header p {
+    font-size: 0.95rem;
+  }
 
-    .schedule-header {
-        padding: 20px;
-    }
+  .schedule-card {
+    padding: 16px;
+    border-radius: 18px;
+  }
 
-    .schedule-row {
-        padding: 17px 20px;
-    }
+  .schedule-icon {
+    font-size: 1.6rem;
+  }
 
+  .schedule-card-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .schedule-toggle {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .schedule-level {
+    font-size: 0.85rem;
+  }
+
+  .schedule-time {
+    font-size: 0.8rem;
+  }
+
+  .schedule-item {
+    padding: 10px 12px;
+  }
+
+  .sede-title {
+    font-size: 1rem;
+  }
 }

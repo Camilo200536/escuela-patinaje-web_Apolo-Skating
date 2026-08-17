@@ -6,11 +6,7 @@
   min-height: calc(100vh - 90px);
   display: flex;
   align-items: center;
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #f7fbf8 100%
-  );
+  background: #e8f5ee; 
   padding: 40px 20px;  /* ← AÑADÍ padding para dar espacio */
   overflow: visible;   /* ← IMPORTANTE: evita que se corten los botones */
 }
