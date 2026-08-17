@@ -38,8 +38,6 @@ onClick={()=>setMenuOpen(true)}
 
 </button>
 
-<br />
-<br />
 
 <a
     href="https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20inscribirme%20en%20Apolo%20Skating."
