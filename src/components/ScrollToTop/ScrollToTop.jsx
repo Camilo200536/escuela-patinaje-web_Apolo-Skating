@@ -1,24 +1,31 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { FaArrowUp } from "react-icons/fa";
 import "./ScrollToTop.css";
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false);
+  const { pathname } = useLocation();
 
+  // 🔹 SUBIR AUTOMÁTICAMENTE AL CAMBIAR DE PÁGINA
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
+  // 🔹 MOSTRAR/OCULTAR BOTÓN FLOTANTE
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+      setVisible(window.scrollY > 300);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // 🔹 FUNCIÓN PARA SUBIR AL INICIO
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -28,12 +35,12 @@ function ScrollToTop() {
 
   return (
     <button
-  className={`scroll-top ${visible ? "show" : ""}`}
-  onClick={scrollToTop}
->
-  <FaArrowUp />
-  <span>Inicio</span>
-</button>
+      className={`scroll-top ${visible ? "show" : ""}`}
+      onClick={scrollToTop}
+    >
+      <FaArrowUp />
+      <span>Inicio</span>
+    </button>
   );
 }
 

@@ -59,11 +59,11 @@ function Explore(){
 
                 image={Aboutimage}
 
-                title="Conocenos"
+                title="Descubre nuestra esencia"
 
-                description="Nuestra mision, vision y valores"
+                description="Detrás de cada patinador, una historia"
 
-                buttonText="Ver Galería"
+                buttonText="Ver valores del club"
 
                 link="/conocenos"
 
