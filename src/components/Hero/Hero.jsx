@@ -32,16 +32,7 @@ function Hero() {
     className="btn-primary"
             >
     Inscríbete
-            </a>
-          <a 
-    href="/conocenos"
-    //target="_blank"
-    rel="noopener noreferrer"
-    className="btn-primary">
-              Conócenos
-          </a>
-
-          
+            </a> 
           </div>
 
         </div>

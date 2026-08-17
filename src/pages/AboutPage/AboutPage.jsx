@@ -12,7 +12,7 @@ function AboutPage() {
 
             {/* INTRODUCCIÓN */}
 
-            <section className="about-intro">
+            <section className="about-intro" id="conocenos">
 
                 <span className="about-tag">
                     CONÓCENOS

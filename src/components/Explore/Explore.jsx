@@ -4,6 +4,7 @@ import ExploreCard from "../ExploreCard/ExploreCard";
 
 import galleryImage from "../../assets/images/Gallery/Gallery.png";
 import teachersImage from "../../assets/images/Teachers/Profes.png";
+import Aboutimage from "../../assets/images/About/About4.jpeg";
 
 function Explore(){
 
@@ -51,6 +52,20 @@ function Explore(){
                 buttonText="Conocer Profesores"
 
                 link="/profesores"
+
+            />
+
+            <ExploreCard
+
+                image={Aboutimage}
+
+                title="Conocenos"
+
+                description="Nuestra mision, vision y valores"
+
+                buttonText="Ver Galería"
+
+                link="/conocenos"
 
             />
 
