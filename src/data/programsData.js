@@ -1,10 +1,13 @@
 import NivelCero1 from "../assets/images/Programs/NivelCero1.jpeg";
 import NivelCero2 from "../assets/images/Programs/NivelCero2.jpeg";
 import NivelCero3 from "../assets/images/Programs/NivelCero3.jpeg";
+import NivelUno1 from "../assets/images/Programs/NivelUno1.jpeg";
+import NivelUno2 from "../assets/images/Programs/NivelUno2.jpeg";
+import NivelUno3 from "../assets/images/Programs/NivelUno3.jpeg";
 
 export const programsData = [
   {
-    // ⚡ DATOS BÁSICOS (igual que programs.js)
+    // ⚡ NIVEL CERO
     id: 1,
     title: "Iniciacion",
     slug: "nivel-cero",
@@ -57,5 +60,114 @@ export const programsData = [
       whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
     },
   },
-  // Aquí puedes agregar los demás niveles con la misma estructura
+  {
+    // ⚡ NIVEL 1
+    id: 2,
+    title: "Nivel 1",
+    slug: "nivel-uno",
+    level: "Nivel 1",
+    age: "De 5 años en adelante (Segun evaluacion)",
+    description: "Programa enfocado en fortalecer las bases técnicas del patinaje. Los patinadores mejoran su equilibrio, coordinación y control, aprendiendo nuevas habilidades como giros básicos, frenado en cuña y desplazamientos laterales. Se introduce el trabajo en pista con ejercicios de velocidad controlada y slalom básico, preparando al estudiante para niveles intermedios.",
+    image: NivelCero1,
+
+    // 🆕 INFORMACIÓN COMPLETA
+    duration: "6 meses",
+    instructor: "Aina",
+
+    objectives: [
+      "Objetivo 1: Perfeccionar el equilibrio y la postura sobre los patines para un desplazamiento más fluido",
+      "Objetivo 2: Dominar giros básicos y frenado en cuña con control y seguridad",
+      "Objetivo 3: Realizar slalom básico y ejercicios de velocidad controlada en pista",
+    ],
+
+    skills: [
+      "Habilidad 1: Realizar giros en ambas direcciones sin perder velocidad ni control",
+      "Habilidad 2: Pasar entre conos en slalom manteniendo el ritmo y la postura",
+      "Habilidad 3: Pasar entre conos en slalom manteniendo el ritmo y la postura",
+    ],
+
+    requirements: "Haber completado el nivel Iniciación o tener experiencia básica en patinaje",
+
+    equipment: [
+      "Patines (ajustables o talla correcta)",
+      "Casco de seguridad",
+      "Rodilleras",
+      "Coderas",
+      "Muñequeras"
+    ],
+
+    images: {
+  main: NivelUno1,
+  gallery: [
+    NivelUno2,
+    NivelUno3,
+             ],
+            },
+
+    colors: {
+      primary: "#4CAF50",
+      light: "#E8F5E9",
+    },
+
+    cta: {
+      text: "Inscribirme en Nivel Uno",
+      whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
+    },
+  },
+
+{
+    // ⚡ NIVEL 1
+    id: 3,
+    title: "Nivel 2",
+    slug: "nivel-dos",
+    level: "Nivel 2",
+    age: "Segun evaluacion",
+    description: "Programa enfocado en fortalecer las bases técnicas del patinaje. Los patinadores mejoran su equilibrio, coordinación y control, aprendiendo nuevas habilidades como giros básicos, frenado en cuña y desplazamientos laterales. Se introduce el trabajo en pista con ejercicios de velocidad controlada y slalom básico, preparando al estudiante para niveles intermedios.",
+    image: NivelCero1,
+
+    // 🆕 INFORMACIÓN COMPLETA
+    duration: "6 meses",
+    instructor: "Aina",
+
+    objectives: [
+      "Objetivo 1: Perfeccionar el equilibrio y la postura sobre los patines para un desplazamiento más fluido",
+      "Objetivo 2: Dominar giros básicos y frenado en cuña con control y seguridad",
+      "Objetivo 3: Realizar slalom básico y ejercicios de velocidad controlada en pista",
+    ],
+
+    skills: [
+      "Habilidad 1: Realizar giros en ambas direcciones sin perder velocidad ni control",
+      "Habilidad 2: Pasar entre conos en slalom manteniendo el ritmo y la postura",
+      "Habilidad 3: Pasar entre conos en slalom manteniendo el ritmo y la postura",
+    ],
+
+    requirements: "Haber completado el nivel Iniciación o tener experiencia básica en patinaje",
+
+    equipment: [
+      "Patines (ajustables o talla correcta)",
+      "Casco de seguridad",
+      "Rodilleras",
+      "Coderas",
+      "Muñequeras"
+    ],
+
+    images: {
+  main: NivelUno1,
+  gallery: [
+    NivelUno2,
+    NivelUno3,
+             ],
+            },
+
+    colors: {
+      primary: "#4CAF50",
+      light: "#E8F5E9",
+    },
+
+    cta: {
+      text: "Inscribirme en Nivel Uno",
+      whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
+    },
+  },
+
 ];
