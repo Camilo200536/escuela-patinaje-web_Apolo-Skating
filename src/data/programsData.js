@@ -7,6 +7,12 @@ import NivelUno3 from "../assets/images/Programs/NivelUno3.jpeg";
 import NivelDos1 from "../assets/images/Programs/NivelDos1.jpeg";
 import NivelDos2 from "../assets/images/Programs/NivelDos2.jpeg";
 import NivelDos3 from "../assets/images/Programs/NivelDos3.jpeg";
+import NivelTres1 from "../assets/images/Programs/NivelTres1.jpeg";
+import NivelTres2 from "../assets/images/Programs/NivelTres2.jpeg";
+import NivelTres3 from "../assets/images/Programs/NivelTres3.jpeg";
+import NivelCuatro1 from "../assets/images/Programs/NivelCuatro1.jpeg";
+import NivelCuatro2 from "../assets/images/Programs/NivelCuatro2.jpeg";
+import NivelCuatro3 from "../assets/images/Programs/NivelCuatro3.jpeg";
 
 export const programsData = [
   {
@@ -172,5 +178,117 @@ export const programsData = [
       whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
     },
   },
+
+{
+    // ⚡ NIVEL 3
+    id: 4,
+    title: "Nivel 3",
+    slug: "nivel-tres",
+    level: "Nivel 3",
+    age: "Segun evaluacion",
+    description: "Programa de alto rendimiento para patinadores con experiencia, enfocado en el perfeccionamiento de la técnica de velocidad, el trabajo de fuerza y resistencia, y la preparación táctica para competencias regionales y nacionales. Los patinadores desarrollan estrategias de carrera, manejo de ritmo y trabajo en equipo, con entrenamientos físicos complementarios y análisis técnico constante.",
+    image: NivelTres1,
+
+    // 🆕 INFORMACIÓN COMPLETA
+    duration: "6 meses",
+    instructor: "Alejandra",
+
+    objectives: [
+      "Objetivo 1: Perfeccionar la técnica de velocidad y la posición aerodinámica para maximizar el rendimiento",
+      "Objetivo 2: Dominar estrategias de carrera, manejo de ritmo y relevos en competencia",
+      "Objetivo 3: Desarrollar fuerza, resistencia y preparación física para competiciones regionales y nacionales",
+    ],
+
+    skills: [
+      "Habilidad 1: Técnica de doble empuje (doble push) para mantener velocidad constante en pista",
+      "Habilidad 2: Salida de tacos y curva peraltada con inclinación y control de trayectoria",
+      "Habilidad 3: Estrategias de dosificación de esfuerzo, relevos y definición en sprint final",
+    ],
+
+    requirements: "Haber completado el nivel 2 - Intermedios y aprobar prueba técnica con el entrenador",
+
+    equipment: [
+      "Patines (ajustables o talla correcta)",
+      "Casco de seguridad",
+      "Rodilleras",
+      "Coderas",
+      "Muñequeras"
+    ],
+
+    images: {
+  main: NivelTres1,
+  gallery: [
+    NivelTres2,
+    NivelTres3,
+             ],
+            },
+
+    colors: {
+      primary: "#4CAF50",
+      light: "#E8F5E9",
+    },
+
+    cta: {
+      text: "Inscribirme en Nivel Tres",
+      whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
+    },
+  },
+
+{
+    // ⚡ NIVEL 4
+    id: 5,
+    title: "Nivel 4",
+    slug: "nivel-cuatro",
+    level: "Nivel 4",
+    age: "Segun evaluacion",
+    description: "Programa para patinadores con experiencia que buscan iniciar su camino en el patinaje competitivo. Se enfoca en la preparación para torneos locales y regionales, fortaleciendo la técnica de velocidad, la resistencia y la estrategia de carrera. Los patinadores aprenden a manejar la presión de la competencia, trabajar en equipo en relevos y mejorar su rendimiento físico con entrenamientos específicos. Es el nivel de transición entre el entrenamiento avanzado y el alto rendimiento.",
+    image: NivelCuatro1,
+
+    // 🆕 INFORMACIÓN COMPLETA
+    duration: "6 meses",
+    instructor: "Sofia Chala",
+
+    objectives: [
+      "Participar en torneos locales y regionales aplicando técnicas de velocidad y estrategias de carrera",
+      "Objetivo 2: Perfeccionar la técnica de relevos (postas) y el trabajo en equipo dentro de la pista",
+      "Objetivo 3: Desarrollar resistencia aeróbica y velocidad de sprint para competir al máximo nivel",
+    ],
+
+    skills: [
+      "Habilidad 1: Manejo de ritmo en carrera y dosificación de esfuerzo en competencias",
+      "Habilidad 2: Técnica avanzada de relevos (postas) y coordinación con compañeros",
+      "Habilidad 3: Lectura de competencia y estrategia según rivales y condiciones de la pista",
+    ],
+
+    requirements: "Haber completado el nivel 3 - Avanzados y contar con la aprobación del entrenador para iniciar competencias",
+
+    equipment: [
+      "Patines (ajustables o talla correcta)",
+      "Casco de seguridad",
+      "Rodilleras",
+      "Coderas",
+      "Muñequeras"
+    ],
+
+    images: {
+  main: NivelCuatro2,
+  gallery: [
+    NivelCuatro1,
+    NivelCuatro3,
+             ],
+            },
+
+    colors: {
+      primary: "#4CAF50",
+      light: "#E8F5E9",
+    },
+
+    cta: {
+      text: "Inscribirme en Nivel Cuatro",
+      whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
+    },
+  },
+
+
 
 ];
