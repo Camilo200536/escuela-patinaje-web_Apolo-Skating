@@ -1,8 +1,7 @@
 import "./Gallery.css";
-
 import gallery from "../../data/gallery";
-
 import GalleryCard from "../GalleryCard/GalleryCard";
+import { Link } from "react-router-dom";
 
 function Gallery() {
 
@@ -47,6 +46,12 @@ function Gallery() {
                 </div>
 
             </div>
+
+            <div className="Gallery-back">
+    <Link to="/" className="btn-volver">
+        ← Volver al inicio
+    </Link>
+</div>
 
         </section>
 

@@ -1,4 +1,6 @@
 import "./AboutPage.css";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import about1 from "../../assets/images/About/About1.jpg";
 import about2 from "../../assets/images/About/About2.jpg";
@@ -6,7 +8,9 @@ import about3 from "../../assets/images/About/About3.jpeg";
 
 function AboutPage() {
 
-
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     return (
 
         <main className="about-page">
@@ -259,6 +263,12 @@ function AboutPage() {
                     </article>
 
                 </div>
+
+                <div className="About-back">
+    <Link to="/" className="btn-volver">
+        ← Volver al inicio
+    </Link>
+</div>
 
             </section>
 

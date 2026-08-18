@@ -1,12 +1,17 @@
 import "./TeachersPage.css";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import TeacherCard from "../../components/TeacherCard/TeacherCard";
 
 import teachers from "../../data/teachers";
 import admin from "../../data/administrators";
 
-function TeachersPage(){
 
+function TeachersPage(){
+useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
     return(
 
         <section className="teachers-page">
@@ -90,6 +95,14 @@ function TeachersPage(){
                 }
 
             </div>
+
+<div className="teachers-back">
+    <Link to="/" className="btn-volver">
+        ← Volver al inicio
+    </Link>
+</div>
+
+
 
         </section>
 
