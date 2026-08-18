@@ -4,6 +4,9 @@ import NivelCero3 from "../assets/images/Programs/NivelCero3.jpeg";
 import NivelUno1 from "../assets/images/Programs/NivelUno1.jpeg";
 import NivelUno2 from "../assets/images/Programs/NivelUno2.jpeg";
 import NivelUno3 from "../assets/images/Programs/NivelUno3.jpeg";
+import NivelDos1 from "../assets/images/Programs/NivelDos1.jpeg";
+import NivelDos2 from "../assets/images/Programs/NivelDos2.jpeg";
+import NivelDos3 from "../assets/images/Programs/NivelDos3.jpeg";
 
 export const programsData = [
   {
@@ -116,32 +119,32 @@ export const programsData = [
   },
 
 {
-    // ⚡ NIVEL 1
+    // ⚡ NIVEL 2
     id: 3,
     title: "Nivel 2",
     slug: "nivel-dos",
     level: "Nivel 2",
     age: "Segun evaluacion",
-    description: "Programa enfocado en fortalecer las bases técnicas del patinaje. Los patinadores mejoran su equilibrio, coordinación y control, aprendiendo nuevas habilidades como giros básicos, frenado en cuña y desplazamientos laterales. Se introduce el trabajo en pista con ejercicios de velocidad controlada y slalom básico, preparando al estudiante para niveles intermedios.",
+    description: "Programa enfocado en el perfeccionamiento técnico y la preparación para competencias. Los patinadores mejoran su velocidad, desarrollan técnicas avanzadas de frenado y giro, e inician el trabajo en slalom y obstáculos con mayor exigencia. Se introduce el entrenamiento físico complementario y la preparación mental para afrontar retos deportivos.",
     image: NivelCero1,
 
     // 🆕 INFORMACIÓN COMPLETA
     duration: "6 meses",
-    instructor: "Aina",
+    instructor: "Alejandra",
 
     objectives: [
-      "Objetivo 1: Perfeccionar el equilibrio y la postura sobre los patines para un desplazamiento más fluido",
-      "Objetivo 2: Dominar giros básicos y frenado en cuña con control y seguridad",
-      "Objetivo 3: Realizar slalom básico y ejercicios de velocidad controlada en pista",
+      "Objetivo 1: Perfeccionar giros avanzados y frenado con control en superficies variadas",
+      "Objetivo 2: Dominar slalom intermedio con obstáculos y cambios de ritmo",
+      "Objetivo 3: Aumentar la velocidad y la resistencia en pista para preparación competitiva",
     ],
 
     skills: [
-      "Habilidad 1: Realizar giros en ambas direcciones sin perder velocidad ni control",
-      "Habilidad 2: Pasar entre conos en slalom manteniendo el ritmo y la postura",
-      "Habilidad 3: Pasar entre conos en slalom manteniendo el ritmo y la postura",
+      "Habilidad 1: Técnica de empuje lateral y caída de peso para generar velocidad",
+      "Habilidad 2: Posición aerodinámica y brazos atrás para reducir resistencia al viento",
+      "Habilidad 3: Salida de carrera y paso de relevo (postas)",
     ],
 
-    requirements: "Haber completado el nivel Iniciación o tener experiencia básica en patinaje",
+    requirements: "Haber completado el nivel 1 - Principiantes o tener experiencia en técnicas básicas de patinaje de velocidad",
 
     equipment: [
       "Patines (ajustables o talla correcta)",
@@ -152,10 +155,10 @@ export const programsData = [
     ],
 
     images: {
-  main: NivelUno1,
+  main: NivelDos1,
   gallery: [
-    NivelUno2,
-    NivelUno3,
+    NivelDos2,
+    NivelDos3,
              ],
             },
 
@@ -165,7 +168,7 @@ export const programsData = [
     },
 
     cta: {
-      text: "Inscribirme en Nivel Uno",
+      text: "Inscribirme en Nivel Dos",
       whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
     },
   },
