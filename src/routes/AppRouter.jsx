@@ -3,6 +3,7 @@ import GalleryPage from "../pages/GalleryPage/GalleryPage";
 import TeachersPage from "../pages/TeachersPage/TeachersPage";
 import PaginaInicio from "../pages/PaginaInicio/PaginaInicio";
 import AboutPage from "../pages/AboutPage/AboutPage";
+import NivelCero from "../pages/NivelCero/NivelCero";
 
 function AppRouter() {
 
@@ -31,6 +32,11 @@ function AppRouter() {
          path="/conocenos" 
          element={<AboutPage />} 
     />
+
+    <Route 
+    path="/programa/:slug" 
+    element={<NivelCero />} 
+/>
 
 </Routes>
 

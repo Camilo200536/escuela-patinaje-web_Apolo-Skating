@@ -70,22 +70,17 @@
 
 }
 
-.program-content button{
-
-    background:#229342;
-
-    color:white;
-
-    border:none;
-
-    padding:12px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
+.program-content .btn-program {
+  display: inline-block;
+  background: #229342;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
 }
 
 .program-content button:hover{

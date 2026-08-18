@@ -1,4 +1,5 @@
 import "./ProgramCard.css";
+import { Link } from "react-router-dom";
 
 function ProgramCard({
   image,
@@ -7,6 +8,7 @@ function ProgramCard({
   level,
   age,
   buttonText,
+  slug,
 }) {
   return (
     <div className="program-card">
@@ -31,7 +33,9 @@ function ProgramCard({
           </span>
         </div>
 
-        <button>{buttonText}</button>
+        <Link to={`/programa/${slug}`} className="btn-program">
+            {buttonText}
+        </Link>
       </div>
     </div>
   );

@@ -22,6 +22,7 @@ function Programs() {
             key={program.id}
             image={program.image}
             title={program.title}
+            slug={program.slug}
             description={program.description}
             level={program.level}
             age={program.age}

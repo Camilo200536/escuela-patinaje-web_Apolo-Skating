@@ -2,6 +2,7 @@ import "./GalleryPage.css";
 import Gallery from "../../components/Gallery/Gallery";
 
 function GalleryPage(){
+    
 
     return(
 

@@ -6,6 +6,7 @@ import about3 from "../../assets/images/About/About3.jpeg";
 
 function AboutPage() {
 
+
     return (
 
         <main className="about-page">

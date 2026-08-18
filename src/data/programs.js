@@ -12,11 +12,12 @@ const programs = [
     id: 1,
     image: iniciacion,
     title: "Iniciación",
+    slug: "nivel-cero",
     description: "Programa diseñado para niños que comienzan en el mundo del patinaje.",
     level: "Básico",
     age: "4 años en adelante",
     buttonText: "Más información",
-  },
+},
   {
     id: 2,
     image: nivel1,

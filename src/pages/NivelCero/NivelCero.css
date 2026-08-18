@@ -1,0 +1,493 @@
+/* =========================================
+   PÁGINA NIVEL CERO
+========================================= */
+
+.nivel-cero-page {
+  min-height: 100vh;
+  padding: 110px 20px 60px;
+  background: #f5f8f6;
+}
+
+.nivel-cero-container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.nivel-cero-container > h1 {
+  margin: 0;
+  text-align: center;
+  color: #229342;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.nivel-descripcion {
+  max-width: 750px;
+  margin: 18px auto 45px;
+  text-align: center;
+  color: #5f6b63;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   INFORMACIÓN GENERAL
+========================================= */
+
+.nivel-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.nivel-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 110px;
+  padding: 20px;
+
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e4ebe6;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nivel-info-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+.nivel-info-label {
+  margin-bottom: 8px;
+  color: #229342;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.nivel-info-value {
+  color: #26332a;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/* =========================================
+   OBJETIVOS + IMAGEN
+========================================= */
+
+.nivel-objetivos-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+  margin-bottom: 25px;
+}
+
+.nivel-objetivos-section .nivel-card {
+  margin-bottom: 0;
+}
+
+.nivel-imagen {
+  overflow: hidden;
+  min-height: 100%;
+  border-radius: 20px;
+
+  background: #dfe8e1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.nivel-imagen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.nivel-imagen:hover img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.nivel-card {
+  padding: 30px;
+  margin-bottom: 25px;
+
+  background: #ffffff;
+  border: 1px solid #e4ebe6;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.nivel-card h3 {
+  margin: 0 0 20px;
+
+  color: #229342;
+  font-size: 1.35rem;
+  font-weight: 750;
+}
+
+.nivel-card p {
+  margin: 0;
+  color: #5f6b63;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   LISTAS
+========================================= */
+
+.nivel-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nivel-list li {
+  position: relative;
+
+  margin-bottom: 12px;
+  padding: 12px 15px 12px 42px;
+
+  color: #465149;
+  background: #f5f8f6;
+
+  border-radius: 10px;
+
+  line-height: 1.5;
+}
+
+.nivel-list li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 15px;
+  top: 11px;
+
+  color: #229342;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   SEDES Y HORARIOS
+========================================= */
+
+.nivel-sede {
+  margin-top: 20px;
+  padding: 20px;
+
+  background: #f5f8f6;
+  border-radius: 15px;
+}
+
+.nivel-sede h4 {
+  margin: 0 0 15px;
+
+  color: #26332a;
+  font-size: 1.1rem;
+}
+
+.nivel-horario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #dce5de;
+
+  color: #526057;
+}
+
+.nivel-horario:last-child {
+  border-bottom: none;
+}
+
+.nivel-horario span:first-child {
+  font-weight: 600;
+}
+
+.nivel-horario span:last-child {
+  color: #229342;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   BOTÓN DE INSCRIPCIÓN
+========================================= */
+
+.nivel-cta {
+  display: flex;
+  justify-content: center;
+
+  margin: 40px 0 25px;
+}
+
+.btn-inscribirse {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 240px;
+  padding: 15px 30px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  border-radius: 50px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.btn-inscribirse:hover {
+  transform: translateY(-3px);
+  filter: brightness(0.95);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =========================================
+   VOLVER AL INICIO
+========================================= */
+
+.nivel-volver-inicio {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 20px;
+}
+
+.btn-volver {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 28px;
+
+  color: #229342;
+  background: #ffffff;
+
+  border: 2px solid #229342;
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.btn-volver:hover {
+  color: #ffffff;
+  background: #229342;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PROGRAMA NO ENCONTRADO
+========================================= */
+
+.nivel-no-encontrado {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  text-align: center;
+  background: #f5f8f6;
+}
+
+.nivel-no-encontrado h2 {
+  margin-bottom: 10px;
+
+  color: #229342;
+  font-size: 2rem;
+}
+
+.nivel-no-encontrado p {
+  margin-bottom: 25px;
+
+  color: #5f6b63;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .nivel-cero-page {
+    padding-top: 90px;
+  }
+
+  .nivel-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nivel-objetivos-section {
+    grid-template-columns: 1fr;
+  }
+
+  .nivel-imagen {
+    min-height: 280px;
+  }
+
+  .nivel-imagen img {
+    min-height: 280px;
+    max-height: 400px;
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE - CELULAR
+========================================= */
+
+@media (max-width: 500px) {
+
+  .nivel-cero-page {
+    padding: 80px 15px 45px;
+  }
+
+  .nivel-cero-container > h1 {
+    font-size: 2.2rem;
+  }
+
+  .nivel-descripcion {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .nivel-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .nivel-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .nivel-info-item {
+    min-height: 90px;
+  }
+
+  .nivel-imagen {
+    border-radius: 16px;
+  }
+
+  .nivel-imagen img {
+    min-height: 230px;
+  }
+
+  .nivel-horario {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .btn-inscribirse,
+  .btn-volver {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+.galeria-grid {
+  grid-template-columns: 1fr;
+}
+
+.galeria-item {
+  height: 230px;
+}
+
+/* =========================================
+   GALERÍA
+========================================= */
+
+.nivel-galeria {
+  margin-bottom: 25px;
+  padding: 30px;
+
+  background: #ffffff;
+  border: 1px solid #e4ebe6;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.nivel-galeria h3 {
+  margin: 0 0 20px;
+
+  color: #229342;
+  font-size: 1.35rem;
+  font-weight: 750;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.galeria-item {
+  overflow: hidden;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.galeria-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.galeria-item:hover img {
+  transform: scale(1.05);
+}
