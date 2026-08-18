@@ -13,6 +13,9 @@ import NivelTres3 from "../assets/images/Programs/NivelTres3.jpeg";
 import NivelCuatro1 from "../assets/images/Programs/NivelCuatro1.jpeg";
 import NivelCuatro2 from "../assets/images/Programs/NivelCuatro2.jpeg";
 import NivelCuatro3 from "../assets/images/Programs/NivelCuatro3.jpeg";
+import Profesional1 from "../assets/images/Programs/Profesional1.jpeg";
+import Profesional2 from "../assets/images/Programs/Profesional2.jpeg";
+import Profesional3 from "../assets/images/Programs/Profesional3.jpeg";
 
 export const programsData = [
   {
@@ -249,7 +252,7 @@ export const programsData = [
     instructor: "Sofia Chala",
 
     objectives: [
-      "Participar en torneos locales y regionales aplicando técnicas de velocidad y estrategias de carrera",
+      "Objetivo 1: Participar en torneos locales y regionales aplicando técnicas de velocidad y estrategias de carrera",
       "Objetivo 2: Perfeccionar la técnica de relevos (postas) y el trabajo en equipo dentro de la pista",
       "Objetivo 3: Desarrollar resistencia aeróbica y velocidad de sprint para competir al máximo nivel",
     ],
@@ -290,5 +293,59 @@ export const programsData = [
   },
 
 
+{
+    // ⚡ NIVEL PROFESIONAL
+    id: 6,
+    title: "Profesional",
+    slug: "Profesional",
+    level: "Profesional",
+    age: "Segun evaluacion",
+    description: "Programa de élite para patinadores con alto nivel técnico y competitivo. Los deportistas participan activamente en competencias regionales y nacionales, con entrenamientos especializados en velocidad, resistencia, táctica y preparación física de alto rendimiento. Se realiza seguimiento personalizado, análisis de carrera y trabajo psicológico para afrontar la presión competitiva. El objetivo es formar patinadores capaces de representar al club en escenarios de alto nivel.",
+    image: Profesional1,
+
+    // 🆕 INFORMACIÓN COMPLETA
+    duration: "Nivel novato, intermedio y avanzado",
+    instructor: "Alejandro",
+
+    objectives: [
+      "Objetivo 1: Competir a nivel nacional e internacional representando al club con alto rendimiento",
+      "Objetivo 2: Perfeccionar todas las técnicas de velocidad, relevos y estrategia avanzada de carrera",
+      "Objetivo 3: Mantener un estado físico óptimo y preparación mental para competencias de élite",
+    ],
+
+    skills: [
+      "Habilidad 1: Ejecución de doble empuje con máxima eficiencia y economía de energía",
+      "Habilidad 2: Dominio de cambios de ritmo, posicionamiento y cierre de espacios en competencia",
+      "Habilidad 3: Trabajo en equipo sincronizado para relevos (postas) con precisión milimétrica",
+    ],
+
+    requirements: "Haber completado el nivel 4 - Competitivo y tener experiencia comprobada en competencias nacionales e interclubes",
+
+    equipment: [
+      "Patines (Patin de bota profesional)",
+      "Casco de seguridad",
+      "Rodilleras",
+      "Coderas",
+      "Muñequeras"
+    ],
+
+    images: {
+  main: Profesional1,
+  gallery: [
+    Profesional2,
+    Profesional3,
+             ],
+            },
+
+    colors: {
+      primary: "#4CAF50",
+      light: "#E8F5E9",
+    },
+
+    cta: {
+      text: "Inscribirme en Nivel Cuatro",
+      whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
+    },
+  },
 
 ];

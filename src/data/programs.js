@@ -63,6 +63,7 @@ const programs = [
     id: 6,
     image: competitivo,
     title: "Competitivo",
+    slug: "Profesional",
     description: "Entrenamiento de alto rendimiento para competencias oficiales.",
     level: "Patin profesional",
     age: "Según evaluación",
