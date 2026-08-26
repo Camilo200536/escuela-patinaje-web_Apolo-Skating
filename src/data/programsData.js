@@ -16,6 +16,9 @@ import NivelCuatro3 from "../assets/images/Programs/NivelCuatro3.jpeg";
 import Profesional1 from "../assets/images/Programs/Profesional1.jpeg";
 import Profesional2 from "../assets/images/Programs/Profesional2.jpeg";
 import Profesional3 from "../assets/images/Programs/Profesional3.jpeg";
+import Adultos1 from "../assets/images/Programs/Adultos1.jpeg";
+import Adultos2 from "../assets/images/Programs/Adultos2.jpeg";
+import Adultos3 from "../assets/images/Programs/Adultos3.jpeg";
 
 export const programsData = [
   {
@@ -344,6 +347,62 @@ export const programsData = [
 
     cta: {
       text: "Inscribirme en Nivel Cuatro",
+      whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
+    },
+  },
+
+
+{
+    // ⚡ ADULTOS
+    id: 7,
+    title: "Adultos",
+    slug: "Adultos",
+    level: "Adultos",
+    age: "18 años en adelante",
+    description: "Programa diseñado para mayores de 18 años que desean aprender o mejorar su técnica en el patinaje de velocidad. Las clases se adaptan al ritmo y condición física de cada participante, combinando trabajo técnico, físico y recreativo en un ambiente social y motivador. Ideal para quienes buscan mantenerse activos, liberar estrés y formar parte de una comunidad deportiva.",
+    image: Adultos1,
+
+    // 🆕 INFORMACIÓN COMPLETA
+    duration: "Nivel iniciacion, intermedio y avanzado",
+    instructor: "Alejandro",
+
+    objectives: [
+      "Objetivo 1: Desarrollar o perfeccionar la técnica de patinaje de velocidad adaptada al ritmo y condición física del adulto",
+      "Objetivo 2: Mejorar la condición física general, la resistencia y la coordinación a través del patinaje",
+      "Objetivo 3: Fomentar la recreación, el bienestar y la integración social dentro de un ambiente deportivo saludable",
+    ],
+
+    skills: [
+      "Habilidad 1: Técnica de desplazamiento eficiente con énfasis en equilibrio y control de velocidad",
+      "Habilidad 2: Frenado seguro y manejo de cambios de dirección en pista",
+      "Habilidad 3: Dosificación del esfuerzo para mantener ritmo constante durante el entrenamiento",
+    ],
+
+    requirements: "Tener 18 años o más, y muchas ganas de aprender, divertirte y mantenerte activo a través del patinaje",
+
+    equipment: [
+      "Patines",
+      "Casco de seguridad",
+      "Rodilleras",
+      "Coderas",
+      "Muñequeras"
+    ],
+
+    images: {
+  main: Adultos1,
+  gallery: [
+    Adultos2,
+    Adultos3,
+             ],
+            },
+
+    colors: {
+      primary: "#4CAF50",
+      light: "#E8F5E9",
+    },
+
+    cta: {
+      text: "Inscribirme en el grupo de adultos",
       whatsapp: "https://wa.me/3122359023?text=Hola%2C%20estoy%20interesado%20en%20el%20Nivel%20Cero",
     },
   },
